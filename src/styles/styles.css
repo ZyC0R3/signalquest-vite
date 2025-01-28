@@ -1,0 +1,328 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #f4f4f9;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+}
+
+body.dark-mode .container {
+    background-color: #9e9ea5;  /* Set container background color in dark mode */
+}
+
+body.light-mode .container {
+    background-color: #f4f4f9cc;  /* Set container background color in dark mode */
+}
+
+/* Menu Bar */
+.menu-bar-container {
+    width: 100%;
+    background-color: #0056d6;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.menu-bar {
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+}
+
+.menu-bar a {
+    color: white;
+    font-size: 1.2em;
+    margin-right: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: #003fa1;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu-bar a:hover {
+    background-color: #002b80;
+}
+
+.menu-bar a:last-child {
+    margin-right: 0;
+}
+
+/* Toggle Mode Button */
+.toggle-mode {
+    color: white;
+    margin-right: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: fixed;
+    top: 20px;  /* Keep it fixed at the top */
+    right: 20px;  /* Positioned to the right of the screen */
+    z-index: 20; /* Ensure it stays above other elements */
+}
+
+.toggle-mode span {
+    margin-left: 10px;
+}
+
+/* Style for Dark/Light Mode Text */
+.toggle-mode.light-mode {
+    color: #f4f4f9;
+}
+
+.toggle-mode.dark-mode {
+    color: #b5b1b1;
+}
+
+.toggle-mode-text {
+    font-size: 1em;
+}
+
+/* Main Content */
+.container {
+    max-width: 800px;
+    margin: 5em auto 2em;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-list-container {
+    max-width: 1300px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #0056d6;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    color: #0056d6;
+}
+
+/* Teams Container specific styles */
+.teams-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0056d6;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.team:hover {
+    background-color: #e0e0e0;
+}
+
+/* Rules specific styles */
+p, ul {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+ul {
+    margin: 1em 0;
+    padding: 0 1.5em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Settings specific styles */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.add-team, .reset-button {
+    padding: 0.75em 1.5em;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.add-team {
+    background-color: #0056d6;
+}
+
+.add-team:hover {
+    background-color: #003fa1;
+}
+
+.reset-button {
+    background-color: #ff4c4c;
+}
+
+.reset-button:hover {
+    background-color: #d43f3f;
+}
+
+.clear-localstorage-button {
+    padding: 0.75em 1.5em;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.clear-localstorage-button:hover {
+    background-color: #e53e3e;
+}
+
+/* Card List specific styles */
+
+.card-section {
+    margin-bottom: 3em;
+}
+
+.network-cards .card {
+    background-color: #5bc8af;
+}
+
+.event-cards .card {
+    background-color: #ffaf47;
+}
+
+.special-cards .card {
+    background-color: #bd52cb;
+}
+
+.game-master-cards .card {
+    background-color: #b7245c;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.event-card-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    gap: 1em;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    position: relative;
+    max-width: 195px;
+    min-height: 275px;
+    flex: 1 1 195px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin-top: 25px;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    font-size: 0.8em;
+    margin: 0.5em 0;
+}
+
+.cost-container {
+    margin-top: 1em;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border: 1px solid white;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cost-section {
+    text-align: center;
+}
+
+.cost-section p {
+    margin: 0.25em 0;
+}
+
+.card .card-count {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-master-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+}
