@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { validatePassword } from "../utils/passwordUtils";
-import "../styles.css";
+import "../styles/styles.css";
 
 function MenuBar({ className = "" }) {
   const location = useLocation();

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles.css"; // Ensure this points to your CSS file
+import "../styles/styles.css"; // Ensure this points to your CSS file
 
 function SQ() {
   return (

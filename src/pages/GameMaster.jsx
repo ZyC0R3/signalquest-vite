@@ -1,8 +1,8 @@
 import React from "react";
 import MenuBar from "../components/MenuBar";
 import { useGameContext } from "../context/GameContext";
-import "../styles.css";
-import "../GameMaster.css"; // Import GameMaster-specific styles
+import "../styles/styles.css"; // Import global styles
+import "../styles/GameMaster.css"; // Import GameMaster-specific styles
 
 function GameMaster() {
   const { state, dispatch } = useGameContext();

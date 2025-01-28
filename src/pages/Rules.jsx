@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import MenuBar from "../components/MenuBar";
-import "../styles.css";
+import "../styles/styles.css";
 
 function Rules() {
   return (

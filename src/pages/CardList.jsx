@@ -1,6 +1,6 @@
 import React from "react";
 import MenuBar from "../components/MenuBar";
-import "../styles.css";
+import "../styles/styles.css";
 import { useGameContext } from "../context/GameContext";
 
 const cardData = {

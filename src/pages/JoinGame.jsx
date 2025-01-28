@@ -1,7 +1,7 @@
 import React from "react";
 import MenuBar from "../components/MenuBar";
 import { useGameContext } from "../context/GameContext";
-import "../styles.css";
+import "../styles/styles.css";
 
 function JoinGame() {
   const { state } = useGameContext();

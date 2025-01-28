@@ -1,0 +1,90 @@
+/* Game Master-specific styles */
+.menu-bar-container-gm {
+    background-color: #8B0000;
+}
+
+.menu-bar-gm {
+    background-color: #8B0000; /* Dark red background specific to Game Master page */
+}
+
+.menu-bar-gm a {
+    background-color: #990000; /* Links inside the menu bar for Game Master */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+}
+
+.menu-bar-gm a:hover {
+    background-color: #7E0000; /* Hover effect for Game Master links */
+}
+
+.section {
+    margin-bottom: 2em;
+    border: 1px solid #990000;
+    border-radius: 10px;
+    padding: 1.5em;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #8B0000;
+}
+
+h2 {
+    color: #990000;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    position: relative;
+    max-width: 195px;
+    min-height: 275px;
+    flex: 1 1 195px;
+    background-color: #b7245c;
+}
+
+.card:hover {
+    background-color: #e6e6e6;
+    color: #333;
+}
+
+.game-master-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+}
+
+.reset-button {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+    background-color: #d43f3f;
+}
+
+.remove-active-card-button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #990000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remove-active-card-button:hover {
+    background-color: #7E0000;
+}
