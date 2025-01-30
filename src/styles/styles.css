@@ -321,8 +321,121 @@ ul li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.card .card-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .game-master-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1em;
+}
+
+/* Gameboard */
+/* Game Board Container */
+.game-board-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Game Board Container */
+.game-board-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Board Grid Layout */
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+}
+
+/* Zones Styling */
+.zone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+.playable-zone {
+    background-color: #FF69B4; /* Pink for Playable */
+}
+
+.enhancement-zone {
+    background-color: #FF0000; /* Red for Enhancement */
+}
+
+.component-zone {
+    background-color: #4CAF50; /* Green for Components */
+}
+
+/* Positioning Zones */
+.playable-zone-1 { grid-area: 2 / 2 / span 2 / span 1; }
+.playable-zone-2 { grid-area: 2 / 3 / span 2 / span 1; }
+.playable-zone-3 { grid-area: 2 / 4 / span 2 / span 1; }
+.playable-zone-4 { grid-area: 2 / 5 / span 2 / span 1; }
+
+.enhancement-zone { grid-area: 2 / 8 / span 2 / span 1; }
+
+.component-zone-1 { grid-area: 5 / 3 / span 2 / span 1; }
+.component-zone-2 { grid-area: 6 / 2 / span 2 / span 1; }
+.component-zone-3 { grid-area: 7 / 3 / span 2 / span 1; }
+.component-zone-4 { grid-area: 8 / 2 / span 2 / span 1; }
+.component-zone-5 { grid-area: 5 / 6 / span 2 / span 1; }
+.component-zone-6 { grid-area: 6 / 5 / span 2 / span 1; }
+.component-zone-7 { grid-area: 7 / 6 / span 2 / span 1; }
+.component-zone-8 { grid-area: 8 / 5 / span 2 / span 1; }
+.component-zone-9 { grid-area: 2 / 9 / span 2 / span 1; }
+.component-zone-10 { grid-area: 4 / 9 / span 2 / span 1; }
+.component-zone-11 { grid-area: 6 / 9 / span 2 / span 1; }
+.component-zone-12 { grid-area: 8 / 9 / span 2 / span 1; }
+
+/* Card Slot Styling */
+.card-slot {
+    width: 70px;
+    height: 100px;
+    aspect-ratio: 39/55;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Content Styling */
+.card-content {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px;
 }

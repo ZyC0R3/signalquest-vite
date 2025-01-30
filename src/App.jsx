@@ -7,6 +7,7 @@ import CardList from "./pages/CardList";
 import JoinGame from "./pages/JoinGame";
 import Settings from "./pages/Settings";
 import GameMaster from "./pages/GameMaster";
+import GameBoard from "./pages/gameBoard";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/join" element={<JoinGame />} />
       <Route path="/settings" element={<Settings />} />
       <Route path="/game-master" element={<GameMaster />} />
+      <Route path="/board" element={<GameBoard />} />
     </Routes>
   );
 }

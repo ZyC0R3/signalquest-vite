@@ -25,10 +25,10 @@ function Rules() {
         <h2>Game Components</h2>
         <Link to="/card-list" className="view-cards-button">View Cards</Link> {/* Use Link instead of <a> */}
         <ul>
-          <li>138-Card Main Deck</li>
+          <li>134-Card Main Deck</li>
           <ul>
             <li>88 Network Cards (Fiber Optic Cable, Router, Tower, Power Unit)</li>
-            <li>30 Event Cards (Outage, Upgrade, Repair Kit, etc.)</li>
+            <li>26 Event Cards (Outage, Upgrade, Repair Kit, etc.)</li>
             <li>20 Special Cards (Super Upgrade, Firewall, etc.)</li>
           </ul>
           <li>15 Game Master Cards (one randomly played each week)</li>
