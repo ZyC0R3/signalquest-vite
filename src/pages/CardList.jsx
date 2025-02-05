@@ -84,9 +84,6 @@ function CardList() {
   return (
     <div>
       <MenuBar />
-      <button className="toggle-mode" id="toggle-mode-btn">
-        <span className="toggle-mode-text">Light Mode</span>
-      </button>
       <div className="container card-list-container">
         <h1>Card List</h1>
 

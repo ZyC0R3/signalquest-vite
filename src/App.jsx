@@ -7,7 +7,7 @@ import CardList from "./pages/CardList";
 import JoinGame from "./pages/JoinGame";
 import Settings from "./pages/Settings";
 import GameMaster from "./pages/GameMaster";
-import GameBoard from "./pages/gameBoard";
+import GameBoard from "./pages/GameBoard";
 
 function App() {
   return (

@@ -343,19 +343,10 @@ ul li {
     gap: 1em;
 }
 
-/* Gameboard */
 /* Game Board Container */
 .game-board-container {
     max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Game Board Container */
-.game-board-container {
-    max-width: 1200px;
-    margin: auto;
+    margin: 5em auto 2em;
     padding: 20px;
     text-align: center;
 }
@@ -363,8 +354,8 @@ ul li {
 /* Board Grid Layout */
 .board-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(58, 1fr);
+    grid-template-rows: repeat(22, 1fr);
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -379,44 +370,43 @@ ul li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     border: 2px solid black;
     border-radius: 10px;
-    min-height: 100px;
-}
-
-.playable-zone {
-    background-color: #FF69B4; /* Pink for Playable */
-}
-
-.enhancement-zone {
-    background-color: #FF0000; /* Red for Enhancement */
-}
-
-.component-zone {
-    background-color: #4CAF50; /* Green for Components */
+    min-height: 100%;
+    background-color: #ffffff;
 }
 
 /* Positioning Zones */
-.playable-zone-1 { grid-area: 2 / 2 / span 2 / span 1; }
-.playable-zone-2 { grid-area: 2 / 3 / span 2 / span 1; }
-.playable-zone-3 { grid-area: 2 / 4 / span 2 / span 1; }
-.playable-zone-4 { grid-area: 2 / 5 / span 2 / span 1; }
+.board-zone { grid-area: 1 / 18 / span 22 / span 41; }
+.hand-zone { grid-area: 11 / 1 / span 12 / span 17; }
+.game-zone { grid-area: 1 / 1 / span 10 / span 17; }
 
-.enhancement-zone { grid-area: 2 / 8 / span 2 / span 1; }
+.hand-zone-1 { grid-area: 12 / 4 / span 5 / span 5; }
+.hand-zone-2 { grid-area: 12 / 10 / span 5 / span 5; }
+.hand-zone-3 { grid-area: 17 / 2 / span 5 / span 5; }
+.hand-zone-4 { grid-area: 17 / 7 / span 5 / span 5; }
+.hand-zone-5 { grid-area: 17 / 12 / span 5 / span 5; }
 
-.component-zone-1 { grid-area: 5 / 3 / span 2 / span 1; }
-.component-zone-2 { grid-area: 6 / 2 / span 2 / span 1; }
-.component-zone-3 { grid-area: 7 / 3 / span 2 / span 1; }
-.component-zone-4 { grid-area: 8 / 2 / span 2 / span 1; }
-.component-zone-5 { grid-area: 5 / 6 / span 2 / span 1; }
-.component-zone-6 { grid-area: 6 / 5 / span 2 / span 1; }
-.component-zone-7 { grid-area: 7 / 6 / span 2 / span 1; }
-.component-zone-8 { grid-area: 8 / 5 / span 2 / span 1; }
-.component-zone-9 { grid-area: 2 / 9 / span 2 / span 1; }
-.component-zone-10 { grid-area: 4 / 9 / span 2 / span 1; }
-.component-zone-11 { grid-area: 6 / 9 / span 2 / span 1; }
-.component-zone-12 { grid-area: 8 / 9 / span 2 / span 1; }
+.enhancement-zone { grid-area: 2 / 46 / span 5 / span 5; }
+
+.component-zone-1 { grid-area: 2 / 21 / span 5 / span 5; }
+.component-zone-2 { grid-area: 2 / 26 / span 5 / span 5; }
+.component-zone-3 { grid-area: 2 / 31 / span 5 / span 5; }
+.component-zone-4 { grid-area: 2 / 36 / span 5 / span 5; }
+.component-zone-5 { grid-area: 11 / 19 / span 5 / span 5; }
+.component-zone-6 { grid-area: 11 / 25 / span 5 / span 5; }
+.component-zone-7 { grid-area: 11 / 31 / span 5 / span 5; }
+.component-zone-8 { grid-area: 11 / 37 / span 5 / span 5; }
+.component-zone-9 { grid-area: 17 / 19 / span 5 / span 5; }
+.component-zone-10 { grid-area: 17 / 25 / span 5 / span 5; }
+.component-zone-11 { grid-area: 17 / 31 / span 5 / span 5; }
+.component-zone-12 { grid-area: 17 / 37 / span 5 / span 5; }
+
+
+.playable-zone-1 { grid-area: 2 / 53 / span 5 / span 5; }
+.playable-zone-2 { grid-area: 7 / 53 / span 5 / span 5; }
+.playable-zone-3 { grid-area: 12 / 53 / span 5 / span 5; }
+.playable-zone-4 { grid-area: 17 / 53 / span 5 / span 5; }
 
 /* Card Slot Styling */
 .card-slot {

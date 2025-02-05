@@ -25,29 +25,79 @@ function GameBoard() {
   return (
     <div>
       <MenuBar />
-      <button className="toggle-mode" id="toggle-mode-btn">
-        <span className="toggle-mode-text">Light Mode</span>
-      </button>
+
       <div className="container game-board-container">
         <h1>Game Board</h1>
         <div className="board-grid">
-        <div className="playable-zone-1 zone playable-zone">{renderCards("Playable")}</div>
-          <div className="playable-zone-2 zone playable-zone">{renderCards("Playable")}</div>
-          <div className="playable-zone-3 zone playable-zone">{renderCards("Playable")}</div>
-          <div className="playable-zone-4 zone playable-zone">{renderCards("Playable")}</div>
-          <div className="enhancement-zone zone">{renderCards("Enhancement")}</div>
-          <div className="component-zone-1 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-2 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-3 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-4 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-5 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-6 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-7 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-8 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-9 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-10 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-11 zone component-zone">{renderCards("Component")}</div>
-          <div className="component-zone-12 zone component-zone">{renderCards("Component")}</div>
+          <div className="board-zone zone"></div>
+          <div className="hand-zone zone"></div>
+          <div className="game-zone zone"></div>
+          <div className="hand-zone-1 zone">
+            <p>Hand 1</p>
+          </div>
+          <div className="hand-zone-2 zone">
+            <p>Hand 2</p>
+          </div>
+          <div className="hand-zone-3 zone">
+            <p>Hand 3</p>
+          </div>
+          <div className="hand-zone-4 zone">
+            <p>Hand 4</p>
+          </div>
+          <div className="hand-zone-5 zone">
+            <p>Hand 5</p>
+          </div>
+          <div className="playable-zone-1 zone">{renderCards("Playable")}
+            <p>PZ1</p>
+          </div>
+          <div className="playable-zone-2 zone">{renderCards("Playable")}
+            <p>PZ2</p>
+          </div>
+          <div className="playable-zone-3 zone">{renderCards("Playable")}
+            <p>PZ3</p>
+          </div>
+          <div className="playable-zone-4 zone">{renderCards("Playable")}
+            <p>PZ4</p>
+          </div>
+          <div className="enhancement-zone zone">{renderCards("Enhancement")}
+            <p>Enhance</p>
+          </div>
+          <div className="component-zone-1 zone">{renderCards("Component")}
+            <p>Set 1 Slot 1</p>
+          </div>
+          <div className="component-zone-2 zone">{renderCards("Component")}
+            <p>Set 1 Slot 2</p>
+          </div>
+          <div className="component-zone-3 zone">{renderCards("Component")}
+            <p>Set 1 Slot 3</p>
+          </div>
+          <div className="component-zone-4 zone">{renderCards("Component")}
+            <p>Set 1 Slot 4</p>
+          </div>
+          <div className="component-zone-5 zone">{renderCards("Component")}
+            <p>Set 2 Slot 1</p>
+          </div>
+          <div className="component-zone-6 zone">{renderCards("Component")}
+            <p>Set 2 Slot 2</p>
+          </div>
+          <div className="component-zone-7 zone">{renderCards("Component")}
+            <p>Set 2 Slot 3</p>
+          </div>
+          <div className="component-zone-8 zone">{renderCards("Component")}
+            <p>Set 2 Slot 4</p>
+          </div>
+          <div className="component-zone-9 zone">{renderCards("Component")}
+            <p>Set 3 Slot 1</p>
+          </div>
+          <div className="component-zone-10 zone">{renderCards("Component")}
+            <p>Set 3 Slot 2</p>
+          </div>
+          <div className="component-zone-11 zone">{renderCards("Component")}
+            <p>Set 3 Slot 3</p>
+          </div>
+          <div className="component-zone-12 zone">{renderCards("Component")}
+            <p>Set 3 Slot 4</p>
+          </div>
         </div>
       </div>
     </div>

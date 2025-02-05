@@ -26,9 +26,6 @@ function Settings() {
   return (
     <div>
       <MenuBar />
-      <button className="toggle-mode" id="toggle-mode-btn">
-        <span className="toggle-mode-text">Light Mode</span>
-      </button>
       <div className="container">
         <div className="button-group">
           <button className="add-team" onClick={addTeam}>Add New Team</button>

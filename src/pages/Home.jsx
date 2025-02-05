@@ -13,9 +13,6 @@ function Home() {
   return (
     <div>
       <MenuBar />
-      <button className="toggle-mode" id="toggle-mode-btn">
-        <span className="toggle-mode-text">Light Mode</span>
-      </button>
       <div className="container">
         <h1>Welcome to Signal Quest</h1>
         <p>

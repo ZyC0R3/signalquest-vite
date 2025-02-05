@@ -24,9 +24,10 @@ function MenuBar({ className = "" }) {
       <div className="menu-bar">
         <div className="menu-left">
           {location.pathname !== "/home" && <Link to="/home">Home</Link>}
-          {location.pathname !== "/join" && <Link to="/board">Join Game</Link>}
+          {location.pathname !== "/join" && <Link to="/join">Join Game</Link>}
           {location.pathname !== "/rules" && <Link to="/rules">Rules</Link>}
           {location.pathname !== "/card-list" && <Link to="/card-list">View Game</Link>}
+          {location.pathname !== "/board" && <Link to="/board">Board</Link>}
         </div>
         <div className="menu-right">
           {location.pathname !== "/game-master" && (

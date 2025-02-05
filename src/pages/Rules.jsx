@@ -7,9 +7,7 @@ function Rules() {
   return (
     <div>
       <MenuBar />
-      <button className="toggle-mode" id="toggle-mode-btn">
-        <span className="toggle-mode-text">Light Mode</span>
-      </button>
+
       <div className="container">
         <h1>Signal Quest Rules</h1>
 

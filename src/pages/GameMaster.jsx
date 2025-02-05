@@ -36,9 +36,6 @@ function GameMaster() {
   return (
     <div>
       <MenuBar className="menu-bar-gm" />
-      <button className="toggle-mode" id="toggle-mode-btn">
-        <span className="toggle-mode-text">Light Mode</span>
-      </button>
 
       <div className="container game-master-container" style={{ maxWidth: "1200px" }}>
         <div style={{ textAlign: "center", marginBottom: "20px" }}>
